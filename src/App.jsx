@@ -13,7 +13,7 @@ const App = () => {
         <img className="block lg:hidden h-8 w-auto" src="/Asfi Qazi.png" alt="Logo" />
      </center>
     
-  
+      <Demo/>
    
       <Routes>
         <Route path="/" element={<Landing />} />
