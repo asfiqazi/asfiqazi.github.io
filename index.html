@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Layout | CSS RWD 12 Col System</title>
-  <style>
-    /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-    body, html {
-  height: 100%
-}
-
-.bgimg {
-  /* Background image */
-  background-image: url('EmbdDemo/Resources/m3.jpg');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
-}
-
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 7px;
-  left: 16px;
-}
-
-.topleft img{
-  height: 80px;
-  border-radius: 25px;
-}
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 7px;
-  left: 35%;
-}
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.middle p{
-  margin-top: 7px;
-}
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
-  border: ridge rgb(20, 23, 104) 3px;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asfand Ali - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body bgcolor="black" text="white">
-  <div class="bgimg">
-    <div class="topleft">
-      <img src="EmbdDemo/Resources/Asfi Qazi.png" alt="Asfi Qazi | Logo">
-    </div>
-    <div class="middle">
-      <h1>COMING SOON</h1>
-      <hr>
-      <p>By Asfand Ali Qazi</p>
-    </div>
-    <div class="bottomleft">
-      <p>&copy; All Rights Reserved | Asfand Ali</p>
-    </div>
-  </div>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="Images/Asfi Qazi.png" alt="" width="200"></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="toggle-button" onclick="toggleNavbar()">☰</div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>A Full-Stack Developer</h1>
+            <p><b>Get Your Dreams Fulfilled.</b></p><br>
+            <a href="https://wa.me/923173890469" class="action-button">Get a Quote</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+          <div class="about-info">
+            <h2>About Me</h2>
+            <p>My name is <strong>Asfand Ali</strong>, and I am a Software Engineer with 5 years of experience as a freelancer on Fiverr, along with over 2 years as a faculty member at Aptech.</p>
+      
+            <h2>Professional Background</h2>
+            <p>Throughout my career, I have developed a strong skill set that enables me to create effective solutions for my clients and students. </p> <p> My experiences at Fiverr have equipped me with a deep understanding of client needs, while my role at Aptech has allowed me to share my knowledge with aspiring developers.</p>
+      
+            <h2>Skills</h2>
+            <ul>
+              <li>Proficient in HTML, CSS, and JavaScript</li>
+              <li>Experience with frameworks like React and Angular</li>
+              <li>Strong problem-solving abilities</li>
+              <li>Excellent communication and mentoring skills</li>
+            </ul>
+      </div>
+          
+          <div class="about-image">
+            <img src="Images/me profile.jpg" alt="Profile Picture" style="width: 150px; border-radius: 50%;">
+          </div>
+        </div>
+      </section>
+      
+      
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <br>
+        <div class="project-cards">
+            <div class="card">
+                <img src="project1-image.jpg" alt="Project 1">
+                <h3>Project 1 Title</h3>
+                <p>A brief description of Project 1 that highlights its features.</p>
+            </div>
+            <div class="card">
+                <img src="project2-image.jpg" alt="Project 2">
+                <h3>Project 2 Title</h3>
+                <p>A brief description of Project 2 that highlights its features.</p>
+            </div>
+            <div class="card">
+                <img src="project3-image.jpg" alt="Project 3">
+                <h3>Project 3 Title</h3>
+                <p>A brief description of Project 3 that highlights its features.</p>
+            </div>
+            <div class="card">
+                <img src="project4-image.jpg" alt="Project 4">
+                <h3>Project 4 Title</h3>
+                <p>A brief description of Project 4 that highlights its features.</p>
+            </div>
+            <div class="card">
+                <img src="project5-image.jpg" alt="Project 5">
+                <h3>Project 5 Title</h3>
+                <p>A brief description of Project 5 that highlights its features.</p>
+            </div>
+            <div class="card">
+                <img src="project6-image.jpg" alt="Project 6">
+                <h3>Project 6 Title</h3>
+                <p>A brief description of Project 6 that highlights its features.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <br>
+        <p>Address: Hyderabad Sindh, PK</p>
+        <p>Email: iamasfi143@gmail.com</p>
+        <p>Cell: +92 317 3890469</p>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required rows="10"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span>  <a href="https://www.upwork.com/freelancers/~01e610e77c62b45194" style="color: green;">Asfand Ali</a> - All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
