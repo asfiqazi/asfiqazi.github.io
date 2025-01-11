@@ -3,107 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asfand Ali - Portfolio</title>
+    <title>Asfand Ali - Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"><img src="Images/Asfi Qazi.png" alt="" width="200"></div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="toggle-button" onclick="toggleNavbar()">☰</div>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">Asfand Ali</div>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>A Full-Stack Developer</h1>
-            <p><b>Get Your Dreams Fulfilled.</b></p><br>
-            <a href="https://wa.me/923173890469" class="action-button">Get a Quote</a>
-        </div>
-    </section>
-    <section id="about">
-        <div class="about-container">
-          <div class="about-info">
-            <h2>About Me</h2>
-            <p>My name is <strong>Asfand Ali</strong>, and I am a Software Engineer with 5 years of experience as a freelancer on Fiverr, along with over 2 years as a faculty member at Aptech.</p>
-      
-            <h2>Professional Background</h2>
-            <p>Throughout my career, I have developed a strong skill set that enables me to create effective solutions for my clients and students. </p> <p> My experiences at Fiverr have equipped me with a deep understanding of client needs, while my role at Aptech has allowed me to share my knowledge with aspiring developers.</p>
-      
-            <h2>Skills</h2>
-            <ul>
-              <li>Proficient in HTML, CSS, and JavaScript</li>
-              <li>Experience with frameworks like React and Angular</li>
-              <li>Strong problem-solving abilities</li>
-              <li>Excellent communication and mentoring skills</li>
-            </ul>
-      </div>
-          
-          <div class="about-image">
-            <img src="Images/me profile.jpg" alt="Profile Picture" style="width: 150px; border-radius: 50%;">
-          </div>
-        </div>
-      </section>
-      
-      
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <br>
-        <div class="project-cards">
-            <div class="card">
-                <img src="project1-image.jpg" alt="Project 1">
-                <h3>Project 1 Title</h3>
-                <p>A brief description of Project 1 that highlights its features.</p>
-            </div>
-            <div class="card">
-                <img src="project2-image.jpg" alt="Project 2">
-                <h3>Project 2 Title</h3>
-                <p>A brief description of Project 2 that highlights its features.</p>
-            </div>
-            <div class="card">
-                <img src="project3-image.jpg" alt="Project 3">
-                <h3>Project 3 Title</h3>
-                <p>A brief description of Project 3 that highlights its features.</p>
-            </div>
-            <div class="card">
-                <img src="project4-image.jpg" alt="Project 4">
-                <h3>Project 4 Title</h3>
-                <p>A brief description of Project 4 that highlights its features.</p>
-            </div>
-            <div class="card">
-                <img src="project5-image.jpg" alt="Project 5">
-                <h3>Project 5 Title</h3>
-                <p>A brief description of Project 5 that highlights its features.</p>
-            </div>
-            <div class="card">
-                <img src="project6-image.jpg" alt="Project 6">
-                <h3>Project 6 Title</h3>
-                <p>A brief description of Project 6 that highlights its features.</p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Asfand Ali</h1>
+            <h2>Full-Stack Developer</h2>
+            <p>Passionate about creating robust and scalable web applications. Freelancing on UpWork to bring your ideas to life.</p>
+            <a href="#contact" class="cta-button">Get in touch</a>
+        </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <br>
-        <p>Address: Hyderabad Sindh, PK</p>
-        <p>Email: iamasfi143@gmail.com</p>
-        <p>Cell: +92 317 3890469</p>
-        <form action="https://formspree.io/f/xvgpyjqn"
-        method="POST">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required rows="10"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>Frontend Development</h3>
+                    <p>Crafting responsive and interactive user interfaces using React, Next.js, and modern CSS frameworks.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <p>Building robust server-side applications with Node.js, Express, and database management systems.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔄</div>
+                    <h3>Full-Stack Integration</h3>
+                    <p>Seamlessly connecting frontend and backend to create cohesive, efficient web applications.</p>
+                </div>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; <span id="year"></span>  <a href="https://www.upwork.com/freelancers/~01e610e77c62b45194" style="color: green;">Asfand Ali</a> - All rights reserved.</p>
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with user authentication, product management, and payment integration.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link">Live Demo</a>
+                        <a href="#" class="github-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>A collaborative task management application with real-time updates and team features.</p>
+                    <div class="tech-stack">
+                        <span>Next.js</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+                        <span>Socket.io</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link">Live Demo</a>
+                        <a href="#" class="github-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Personal Finance Tracker</h3>
+                    <p>An application to help users track expenses, set budgets, and visualize financial data.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>Chart.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link">Live Demo</a>
+                        <a href="#" class="github-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <p>Have a project in mind? Let's work together!</p>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p> 2023 Asfand Ali. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.42 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.68 1.68 0 00-1.68 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
