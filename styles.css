@@ -44,6 +44,10 @@ nav {
     font-weight: bold;
 }
 
+.logo img{
+    height: 67px;
+}
+
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
